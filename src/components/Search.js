@@ -3,7 +3,6 @@ import React from 'react'
 const Search = () => {
   return (
     <>
-      <h4 className='text-lg mb-3 font-bold text-gray-600'>Search Recipes:</h4>
       <div className='flex items-center '>
         <label htmlFor='search' className='absolute p-3 text-gray-500'>
           <i className='fa fa-search'></i>
@@ -13,7 +12,7 @@ const Search = () => {
           type='search'
           name='search'
           id='search'
-          placeholder='Search cookies by name or keyworks... (banana)'
+          placeholder='Search recipies by name or keyworks... (banana)'
         />
       </div>
     </>

@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
           <h2 className='py-8 px-4 text-center text-white font-bold text-2xl uppercase tracking-wide'>
             Recipe Search App - ReactJS & Edamam API
           </h2>
-          <div className=' bg-white w-full shadow-lg py-7 px-5 rounded max-w-5xl mx-auto'>
+          <div className=' bg-white w-full shadow-lg py-7 px-5 rounded max-w-6xl mx-auto'>
             {children}
           </div>
         </div>

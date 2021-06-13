@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
+import Filter from './components/Filter'
 import Layout from './components/Layout'
 import Search from './components/Search'
 
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <Layout>
       <Search />
+      <Filter />
       <div>Recipes Here</div>
     </Layout>
   )
