@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = () => {
+const Search = ({ query, setQuery }) => {
   return (
     <>
       <div className='flex items-center '>
@@ -13,6 +13,8 @@ const Search = () => {
           name='search'
           id='search'
           placeholder='Search recipies by name or keyworks... (banana)'
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
       </div>
     </>
