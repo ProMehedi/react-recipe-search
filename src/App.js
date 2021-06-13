@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import Layout from './components/Layout'
+import Search from './components/Search'
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const App = () => {
 
   return (
     <Layout>
-      <h1 className='font-bold text-5xl text-red-700'>Recipe Search</h1>
+      <Search />
+      <div>Recipes Here</div>
     </Layout>
   )
 }
