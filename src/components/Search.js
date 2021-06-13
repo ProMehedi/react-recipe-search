@@ -8,9 +8,10 @@ const Search = ({ search, setSearch, submitHandler, loading }) => {
           <i className='fa fa-search'></i>
         </label>
         <input
-          className='bg-transparent pl-9 pr-4 py-1 w-full rounded border border-gray-300 duration-500 focus:border-blue-400'
+          className='bg-white pl-9 pr-4 py-2 w-full rounded border border-gray-300 duration-500 focus:border-blue-400'
           type='search'
           name='search'
+          required
           id='search'
           placeholder='Search by name or keywords... (banana)'
           value={search.query}
@@ -37,7 +38,7 @@ const Search = ({ search, setSearch, submitHandler, loading }) => {
             <option value='low-sodium'>Low Sodium</option>
           </select>
         </div>
-        <div className='pr-5 mb-3 md:mb-0 w-1/2'>
+        <div className='pr-0 md:pr-5 mb-3 md:mb-0 w-1/2'>
           <label
             htmlFor='mealType'
             className='block mb-2 font-bold text-gray-600'
