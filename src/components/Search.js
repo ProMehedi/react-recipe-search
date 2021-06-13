@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = ({ search, setSearch, submitHandler }) => {
+const Search = ({ search, setSearch, submitHandler, loading }) => {
   return (
     <form onSubmit={submitHandler} className='flex flex-wrap items-end'>
       <div className='flex w-full mb-3 md:mb-0 md:border-red-100 md:w-5/12 items-center'>
@@ -63,9 +63,19 @@ const Search = ({ search, setSearch, submitHandler }) => {
       <div className='w-full md:w-2/12 pl-0 md:pl-6'>
         <button
           typ='submit'
-          className='w-full py-2 px-3 bg-blue-600 text-white rounded'
+          disabled={loading}
+          className={
+            loading
+              ? 'w-full py-2 px-3 bg-blue-400 text-white rounded cursor-not-allowed'
+              : 'w-full py-2 px-3 bg-blue-600 text-white rounded'
+          }
         >
           Search
+          {loading ? (
+            <i className='fa fa-spinner animate-spin ml-1'></i>
+          ) : (
+            <i className='fa fa-search ml-2'></i>
+          )}
         </button>
       </div>
     </form>
